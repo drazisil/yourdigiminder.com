@@ -1,0 +1,14 @@
+{
+  "name": "yourdigiminder.com",
+  "version": "1.0.0",
+  "description": "your digital reminder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph W Becher <jwbecher@drazisil.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
