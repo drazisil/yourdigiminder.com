@@ -5,11 +5,18 @@
     max_clients: 200
   remote_user: drazisil
   become: yes
-  tasks:
+  pre_tasks:
   - name: ensure nginx is at the latest version
     apt:
       name: nginx
-      state: latest
+  - name: ensure curl is at the latest version
+    apt:
+      name: curl
+  roles:
+  - role: nvm
+    nvm:
+      node_version: '6.11.0'
+  tasks:
   - name: deploy the app
     copy:
       src: build/
